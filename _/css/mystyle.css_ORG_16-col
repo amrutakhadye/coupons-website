@@ -1,0 +1,221 @@
+@font-face {
+   font-family: OpenSans;
+   src: url(fonts/OpenSans-Light.ttf);
+}
+
+body {
+    color: #888;
+    font-family: OpenSans;
+    font-size: 14px;
+    line-height: 24px;
+	background-color: #fbfbfb;
+	background-image: url("../images/bg.png");
+}
+
+#navigation {
+    padding-top: 5px;
+}
+menu {
+	display:block;
+}
+
+.menu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+	float:right;
+}
+
+.menu ul li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+
+.menu a {
+    color: #fff; /* #4d4d4d; */
+    font-size: 16px;
+    padding: 10px;
+	text-decoration:none;
+}
+
+.menu a:hover{
+	/* border-bottom:2px solid #4d4d4d; */
+	border-bottom:2px solid #fff;
+}
+
+.navbar-menu {
+    text-align: center;
+}
+
+/* main container style - total width is 1200px */
+.container-outer {
+    margin: 10px auto;
+    padding: 0;
+    position: relative;
+    width: 1230px;
+	box-shadow: 0 0 5px 5px #ccc;
+}
+
+.container-inner {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 1200px;
+}
+/* to provide extra space on homepage */
+.extraspace {
+    padding: 50px 0;
+} 
+
+.column {
+    padding: 50px 0;
+} 
+
+.columns{
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* each column has 20 px buffer (padding) */
+/* for one column */
+.container-inner .col-one.columns {
+    width: 55px;
+}
+
+/* for two columns */
+.container-inner .col-two.columns {
+    width: 130px;
+}
+
+/* for three columns */
+.container-inner .col-three.columns {
+    width: 205px;
+}
+
+/* for four columns */
+.container-inner .col-four.columns {
+    width: 280px;
+}
+
+/* for five columns */
+.container-inner .col-five.columns {
+    width: 355px;
+}
+
+/* for six columns */
+.container-inner .col-six.columns {
+    width: 430px;
+}
+
+/* for seven columns */
+.container-inner .col-seven.columns {
+    width: 505px;
+}
+
+/* for eight columns */
+.container-inner .col-eight.columns {
+    width: 580px;
+}
+
+/* for nine columns */
+.container-inner .col-nine.columns {
+    width: 655px;
+}
+
+/* for ten columns */
+.container-inner .col-ten.columns {
+    width: 730px;
+}
+
+/* for eleven columns */
+.container-inner .col-eleven.columns {
+    width: 805px;
+}
+
+/* for twelve columns */
+.container-inner .col-twelve.columns {
+    width: 880px;
+}
+
+/* for thirteen columns */
+.container-inner .col-thirteen.columns {
+    width: 955px;
+}
+
+/* for fourteen columns */
+.container-inner .col-fourteen.columns {
+    width: 1030px;
+}
+
+/* for fifteen columns */
+.container-inner .col-fifteen.columns {
+    width: 1105px;
+}
+
+/* for sixteen columns */
+.container-inner .col-sixteen.columns {
+    width: 1180px;
+}
+
+
+
+.intro h1 {
+    color: #fff;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.greeting-message  span{
+	font-size:16px;
+}
+
+.greeting-message{
+    padding:5px;
+	color: #fff;
+}
+
+
+.about-us-container {
+    background-color: #0194a6;
+    color: white;
+}
+
+.fullwidthbanner-container.intro {
+    /*background: #23b5ab url("http://demo.powerthemes.club/themes/couponer/wp-content/uploads/2014/06/12.jpg") no-repeat center center; */
+	background:#23b5ab url("/images/back1.jpg") no-repeat scroll center center;
+	/* background: #23b5ab none repeat scroll 0 0; */
+}
+
+.fullwidthbanner-container {
+    padding:150px 0px;
+}
+
+
+#searchbar {
+    text-align: center;
+}
+
+.searchbarinput {
+     background: #f0f0f0 none repeat scroll 0 0;
+    border-image: none;
+    border-radius: 2px;
+    border-style: solid none solid solid;
+    border-width: 4px;
+    height: 35px;
+}
+.searchbutton {
+	background: #4697c1 none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    margin: 5px;
+    padding: 13px 20px;
+}
+.searchbutton:hover {
+	cursor:pointer;
+}

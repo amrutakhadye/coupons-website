@@ -1,0 +1,48 @@
+[22-Nov-2015 02:43:02 America/New_York] PHP Warning:  include(sidebar-vendor-page.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/grabxgvz/public_html/dev2couponz/search.php on line 131
+[22-Nov-2015 02:43:02 America/New_York] PHP Warning:  include(sidebar-vendor-page.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/grabxgvz/public_html/dev2couponz/search.php on line 131
+[22-Nov-2015 02:43:02 America/New_York] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'sidebar-vendor-page.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/grabxgvz/public_html/dev2couponz/search.php on line 131
+[22-Nov-2015 02:53:51 America/New_York] PHP Parse error:  syntax error, unexpected $end in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 35
+[22-Nov-2015 02:54:17 America/New_York] PHP Parse error:  syntax error, unexpected '}' in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 21
+[22-Nov-2015 02:54:18 America/New_York] PHP Parse error:  syntax error, unexpected '}' in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 21
+[22-Nov-2015 03:02:19 America/New_York] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 19
+[22-Nov-2015 03:10:26 America/New_York] PHP Parse error:  syntax error, unexpected $end in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 42
+[22-Nov-2015 03:13:28 America/New_York] PHP Parse error:  syntax error, unexpected ')' in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 22
+[22-Nov-2015 03:39:47 America/New_York] PHP Warning:  mysql_result() expects at least 2 parameters, 1 given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 17
+[22-Nov-2015 03:39:47 America/New_York] PHP Warning:  mysql_result() expects at least 2 parameters, 1 given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 18
+[22-Nov-2015 03:40:45 America/New_York] PHP Parse error:  syntax error, unexpected ',' in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 17
+[22-Nov-2015 03:42:44 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 17
+[22-Nov-2015 03:42:44 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 18
+[22-Nov-2015 03:44:38 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 17
+[22-Nov-2015 03:44:38 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 18
+[22-Nov-2015 03:46:33 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 18
+[22-Nov-2015 03:46:33 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 28
+[22-Nov-2015 03:52:27 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 18
+[22-Nov-2015 03:52:27 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 28
+[22-Nov-2015 03:55:08 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 18
+[22-Nov-2015 03:55:08 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 28
+[22-Nov-2015 03:56:28 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 18
+[22-Nov-2015 03:56:28 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 28
+[22-Nov-2015 03:58:40 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 18
+[22-Nov-2015 03:59:27 America/New_York] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 18
+[22-Nov-2015 04:00:16 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 18
+[22-Nov-2015 04:01:26 America/New_York] PHP Warning:  mysql_query() expects parameter 2 to be resource, integer given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 18
+[22-Nov-2015 04:02:47 America/New_York] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 19
+[22-Nov-2015 04:22:31 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 19
+[22-Nov-2015 04:24:38 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 20
+[22-Nov-2015 04:25:13 America/New_York] PHP Warning:  mysql_result() expects parameter 1 to be resource, boolean given in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 15
+[22-Nov-2015 04:26:19 America/New_York] PHP Parse error:  syntax error, unexpected ';' in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 16
+[22-Nov-2015 04:57:38 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 36
+[22-Nov-2015 04:58:46 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 36
+[22-Nov-2015 04:59:00 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 36
+[22-Nov-2015 05:01:15 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 36
+[22-Nov-2015 05:02:26 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 36
+[22-Nov-2015 05:02:28 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 36
+[22-Nov-2015 13:55:43 America/New_York] PHP Parse error:  syntax error, unexpected T_ECHO in /home/grabxgvz/public_html/dev2couponz/submitted-coupons.php on line 159
+[22-Nov-2015 13:56:38 America/New_York] PHP Parse error:  syntax error, unexpected T_IS_EQUAL in /home/grabxgvz/public_html/dev2couponz/submitted-coupons.php on line 159
+[22-Nov-2015 13:56:41 America/New_York] PHP Parse error:  syntax error, unexpected T_IS_EQUAL in /home/grabxgvz/public_html/dev2couponz/submitted-coupons.php on line 159
+[22-Nov-2015 13:56:41 America/New_York] PHP Parse error:  syntax error, unexpected T_IS_EQUAL in /home/grabxgvz/public_html/dev2couponz/submitted-coupons.php on line 159
+[22-Nov-2015 13:56:41 America/New_York] PHP Parse error:  syntax error, unexpected T_IS_EQUAL in /home/grabxgvz/public_html/dev2couponz/submitted-coupons.php on line 159
+[22-Nov-2015 13:56:42 America/New_York] PHP Parse error:  syntax error, unexpected T_IS_EQUAL in /home/grabxgvz/public_html/dev2couponz/submitted-coupons.php on line 159
+[22-Nov-2015 15:28:05 America/New_York] PHP Parse error:  syntax error, unexpected T_ELSE in /home/grabxgvz/public_html/dev2couponz/submitted-coupons.php on line 161
+[22-Nov-2015 16:11:30 America/New_York] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in /home/grabxgvz/public_html/dev2couponz/sidebar-vendor-page.php on line 30
+[22-Nov-2015 19:37:33 America/New_York] PHP Parse error:  syntax error, unexpected T_ELSE in /home/grabxgvz/public_html/dev2couponz/submitted-coupons.php on line 221
