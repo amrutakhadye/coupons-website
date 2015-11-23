@@ -25,20 +25,27 @@ if(isset($_SESSION['username']) && isset($_SESSION['password']))// to check if t
 
 	
 	$add_vendor=mysql_query("INSERT INTO vendor(vendor_name,vendor_type,vendor_logo) VALUES('$vendor_name','$vendor_type','$vendor_logo')");//inserts into the vendor
-		
+	
+		if ($add_vendor)
+		{	//if data is inserted. Success message is displayed. 
+			$info_success = "The vendor has added.";
+
+			
+		}
+		else
+		{
+		// Displays a messsge if the message is already present in the system.
+		$passfail = "This coupon already exist.";
+		}
+	
+	
 	
 	}	//end if fields are not empty	
-else
-		{
-		
-		$passfail = "This vendor already exist.";
-		}//end else if fields are not empty	
-								
-}//end if fields are not empty	
+
 else
 {
 
-header("Location: my-account.php");//go to my-account.php page
+header("Location: my-count.php");//go to my-count.php page
 }//end else if looking for the 4 employees
 }//end if logged in or not
 
@@ -55,7 +62,7 @@ header("Location: login.php");// go to login oage
 <!DOCTYPE html>
 <html>
 <head>
- <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/mystyle.css">
 
@@ -72,60 +79,41 @@ include 'header.php';//to get the header
 		<div class="container-inner">
 			<div class="row">
 					<?php 
-						include 'sidebar-vendor-page-emp.php';//to get the sidebar
+						include 'sidebar-vendor-page.php';//to get the sidebar
 					?>
 				
 				<div class="col-9">
 				<div id="single-page-layout">
 				<!-- menu for all the pages -->
-
-					<div class="single-page-title">
+				
+					<div id="submit-a-coupon">
+						<div class="single-page-title">
+						<h1>Add A Vender</h1>
 						<!--Displays the name of the Logined User-->
-						<h1><?php print $_SESSION['display_name']; ?>'s Account Details: Add A Vendor</h1>
+						<p><span><?php print $_SESSION['display_name']; //to display the employee's name ?></span></p>
+
+
+						</div>
+						
 					</div>
 					
-					<!-- menu for all the pages -->
-					<div class="myaccount-tabs">
-							<ul id="myaccount-tabs-menu" class="myaccount-tabs-menu emp-account-tabs">
-								<li>
-									<a class="" href="http://dev2couponz.dailyretailcouponz.com/cname.php">Change Name</a>
-								</li>
-								<li>
-									<a class="" href="http://dev2couponz.dailyretailcouponz.com/cpassword.php">Change Password</a>
-								</li>
-								<li>
-									<a class="" href="http://dev2couponz.dailyretailcouponz.com/all-coupons.php">Edit All Coupons</a>
-								</li>
-								<li>
-									<a class="" href="http://dev2couponz.dailyretailcouponz.com/submitted-coupons.php">Submitted Coupons By Users</a>
-								</li>
-								<li>
-									<a class="" href="http://dev2couponz.dailyretailcouponz.com/upload-coupons.php">Upload Coupons (Excel)</a>
-								</li>
-								
-								<li>
-									<a class="current-tab" href="http://dev2couponz.dailyretailcouponz.com/add-vendor.php">Add Vendors</a>
-								</li>
-								<li>
-									<a class="" href="http://dev2couponz.dailyretailcouponz.com/generate-report.php">Get Report</a>
-								</li>
-							</ul>
-					</div>
-					
-					<div class="extra-spacing">
+                        <p class="form_success_info"><?php  echo  $passsuccess; ?></p>
 						<p class="form_error_info"><?php  echo  $fillall; ?></p>
 						<div id="change-password">	
 				
-							<form action="add-vendor.php" method="post">									
-							<p><span class="customformtitle">Vendor Name: </span><input type="text" name="vendor_name"/><br /></p>						
-							<p><span class="customformtitle">Vendor Type: </span><input type="text" name="vendor_type" size="11" /><br/></p>						
-							<p><span class="customformtitle">Vendor Logo: </span><input type="text" name="vendor_logo" size="11"><br /></p>		
-							<p><input type="submit" value="Submit" /></p>
-							</form>
+						<form action="add-vendor.php" method="post">									
+						<p><span class="customformtitle">Vendor Name: </span><input type="text" name="vendor_name" required/><br /></p>						
+						<p><span class="customformtitle">Vendor Type: </span><input type="text" name="vendor_type" size="11"  required/><br/></p>						
+						<p><span class="customformtitle">Vendor Logo: </span><input type="text" name="vendor_logo" size="11"  required><br /></p>		
+						<p><input type="submit" value="Submit" /></p>
+						</form>
+						
 
+
+						
+				
 							
 						</div>
-					</div>
 					</div>
 				</div>
 			</div>
