@@ -17,7 +17,7 @@ mysql_select_db($db_name);
 		//updates the new count in the table
 		$UpdateQuery= mysql_query("UPDATE coupon SET coupon_count='$newCount' where coupon_code = '$_POST[code]'");
 		//return the new count to display in the page
-		echo $newCount;
+		echo 'Coupons Used: '.$newCount;
 	}
 		
 	

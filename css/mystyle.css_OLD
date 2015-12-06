@@ -541,7 +541,6 @@ button.like:hover, button.dislike:hover {
 
 .deals-container {
     background: #fff none repeat scroll 0 0;
-	min-height: 500px;
 }
 
 

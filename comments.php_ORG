@@ -1,0 +1,106 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+
+<title>Comments | DailyRetailCouponz</title>
+
+
+</head>
+<body>
+
+<div class="container-outer">
+<?php
+include '../header.php';
+?>
+<div id="wrapper"> <!-- start of full-container -->
+	<!-- only for inner pages
+	<section id="titlebar"> <!-- title goes here
+		<div class="container">
+		</div>
+	</section> -->
+
+<?php //$uri = $_SERVER['REQUEST_URI'];
+//echo $uri;
+ ?>
+	<!-- displays all featured deals on homepage -->
+	<div id="deals-container" class="deals-container">
+		<div class="container-inner"> 
+			
+				<div class="row">
+						<!-- call sidebar specific to single vendor page -->
+						<?php 
+						include '../sidebar-vendor-page.php'
+						?>
+						
+						<!-- main content page -->
+						<div class="col-9">
+							<div class="single-page-title">
+							<h1 style="text-align:center;">Check out our Featured Deals</h1>
+							</div>
+							<!-- we have to right a loop and fetch data from the database  -->
+							<div class="single-deal">
+								<img class="storelogo" src="http://placehold.it/240x150">
+								<div class="single-dealtext">
+									<div class="dealtitle">60% Off International Flights</div>
+									<p><span class="dealdesc">Grab this deal and receive huge savings on your purchase.</span></p>
+									<p><span class="showcouponbtn">Redeem Coupon</span></p>
+									<div class="single-deal-footer">
+										<p class="single-deal-expiry"><strong>Expiry: </strong> June 21, 2015</p>
+										<!-- <p class="single-deal-share"><strong>Share </strong></p> -->
+										<p class="single-deal-comment"><strong><a href="#">Comment</a></strong></p>
+									</div>
+								</div>												
+							</div>
+							
+							<div class="single-deal">
+								<img class="storelogo" src="http://placehold.it/240x150">
+								<div class="single-dealtext">
+									<div class="dealtitle">$50 Off Domestic Flights</div>
+									<p><span class="dealdesc">Grab this deal and receive huge savings on your purchase.</span></p>
+									<p><span class="showcouponbtn">Redeem Coupon</span></p>
+									<div class="single-deal-footer">
+										<p class="single-deal-expiry"><strong>Expiry: </strong> June 21, 2015</p>
+										<!-- <p class="single-deal-share"><strong>Share </strong></p> -->
+										<p class="single-deal-comment"><strong><a href="#">Comment</a></strong></p>
+									</div>
+								</div>												
+							</div>
+							
+							<div class="single-deal">
+								<img class="storelogo" src="http://placehold.it/240x150">
+								<div class="single-dealtext">
+									<div class="dealtitle">10% Off Flights</div>
+									<p><span class="dealdesc">Grab this deal and receive huge savings on your purchase.</span></p>
+									<p><span class="showcouponbtn">Redeem Coupon</span></p>
+									<div class="single-deal-footer">
+										<p class="single-deal-expiry"><strong>Expiry: </strong> June 21, 2015</p>
+										<!-- <p class="single-deal-share"><strong>Share </strong></p> -->
+										<p class="single-deal-comment"><strong><a href="#">Comment</a></strong></p>
+									</div>
+								</div>												
+							</div>
+							
+							
+							<br>
+						
+						</div>
+
+				
+				</div>
+			
+		</div>
+	</div>
+
+</div> <!-- end of wrapper -->
+
+<?php
+include '../footer.php';
+?>
+
+</div> <!-- end of container-outer -->
+</body>
+</html>

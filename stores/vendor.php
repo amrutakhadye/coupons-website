@@ -22,15 +22,29 @@ mysql_select_db($db_name);
 			$rows = mysql_fetch_array($result);
 			$to = $rows['email']; 
 			
+			$contacts = array (
+				"info@dailyretailcouponz.com",
+				$to,
+			);
+			
 			/* sending the email from info@dailyretailcouponz.com */
 			$from = "daily retail couponz";
 			$url = "http://www.dailyretailcouponz.com/";
 			$from = "info@dailyretailcouponz.com";
-			$subject = "Comment ".($texttext)." Submitted";
-			$body  =  "Thank you for submitting the comment";
+			$subject  =  "Thank you for submitting the comment";
+			$body = "Comment:<br>".($texttext)." <br><br>Refer coupon code:$coupon_code ";
 			$headers = "From: $from\n";
 			$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-			$sentmail = mail( $to, $subject, $body, $headers);
+			//$sentmail = mail( $to, $subject, $body, $headers);
+			
+			foreach($contacts as $contact) {
+				$to      =  $contact;
+				$subject = $subject;
+				$body = $body;
+			
+				
+				$sentmail = mail( $to, $subject, $body, $headers);
+			}
 		
 		}
 	     
@@ -40,9 +54,9 @@ mysql_select_db($db_name);
 <!DOCTYPE html>
 <html>
 <head>
-<title>Vendor Page - DailyRetailCouponz</title>
+<title>Vendor Page | DailyRetailCouponz</title>
  <link rel="stylesheet" type="text/css" href="../css/mystyle.css">
- <link rel="shortcut icon" href="/images/specialicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
  <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="../js/jquery/jquery-1.11.3.min.js" type="text/javascript"></script>
 
@@ -64,10 +78,7 @@ mysql_select_db($db_name);
         });
         }
         
-    function get_comment_date($d, $comment_ID){
-		$d = "l, F jS, Y";
-		$comment_date = get_comment_date( $d, $comment_ID );
-	}
+   
 
     //allows only logined users to vote. If the user is not logined in, message is displayed.
 	function loginRequest(){
@@ -130,7 +141,7 @@ $(".displaycouponcomment").click(function(){
           <div class="row"> 
             <!-- call sidebar specific to single vendor page -->
             <?php 
-               // include '../sidebar-vendor-page.php';/*to get the sidebar page  */
+				include '../sidebar-vendor-page.php'; /*to get the sidebar page  */
             ?>
             <!-- main content page -->
             <div class="col-9">
@@ -298,7 +309,7 @@ $(".displaycouponcomment").click(function(){
 					$count=mysql_num_rows($all_coupons);
 				?>
 				<br>
-				<p><h2><span class="active-inactive">Inactive Coupon(s) Found: <?php echo $count;?></span></h2></p>
+				<p><h2><span class="active-inactive">Unreliable Coupon(s) Found: <?php echo $count;?></span></h2></p>
 				<?php
                     while($row = mysql_fetch_assoc($all_coupons)){
 					$coupon_code=$row['coupon_code'];	
@@ -559,8 +570,11 @@ $(".displaycouponcomment").click(function(){
 						} //while of count comment
 							}//main while
 						?>
-	
-							<p class="showcouponbtn"><a  href="../login.php">Click here to see more coupons</a></p>
+						<div align="middle" class="register-for-more">
+							<a  href="http://dev2couponz.dailyretailcouponz.com/register.php">
+								<button class="register-showcouponbtn">Register to view more coupons...</button>
+							</a>
+						</div>
 				<?php	 
 				 
 					} 	

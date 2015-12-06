@@ -12,8 +12,8 @@ mysql_select_db($db_name);
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="../css/mystyle.css">
 <script src="../js/jquery/jquery-1.11.3.min.js" type="text/javascript"></script>
-
-<title>All Stores - DailyRetailCouponz</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<title>All Stores | DailyRetailCouponz</title>
 </head>
 
 <body>
